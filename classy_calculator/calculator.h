@@ -18,5 +18,6 @@ public:
 private:
     Ui::Calculator *ui;
     void foobar();
+    void foo();
 };
 #endif // CALCULATOR_H
