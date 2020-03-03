@@ -17,5 +17,6 @@ public:
 
 private:
     Ui::Calculator *ui;
+    void foobar();
 };
 #endif // CALCULATOR_H
