@@ -1,5 +1,6 @@
 #include "calculator.h"
 #include "ui_calculator.h"
+#include "QDebug"
 
 Calculator::Calculator(QWidget *parent)
     : QMainWindow(parent)
@@ -11,5 +12,11 @@ Calculator::Calculator(QWidget *parent)
 Calculator::~Calculator()
 {
     delete ui;
+}
+
+QString Calculator::testFunc()
+{
+    qDebug() << "It works!";
+    return "It works!";
 }
 
