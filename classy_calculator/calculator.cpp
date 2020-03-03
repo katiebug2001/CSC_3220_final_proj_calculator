@@ -19,3 +19,10 @@ void Calculator::foobar()
 {
     std::cout << "hello world" << std::endl;
 }
+
+void Calculator::foo()
+{
+    std::cout << "goodbye world" << std::endl;
+}
+
+
