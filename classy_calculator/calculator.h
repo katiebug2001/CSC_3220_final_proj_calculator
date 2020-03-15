@@ -45,6 +45,8 @@ private slots:
 
     void on_delete_button_clicked();
 
+    void on_actionPastelWinter_Blues_triggered();
+
 private:
     Ui::Calculator *ui;
     // state machine elements:
@@ -66,6 +68,7 @@ private:
     QString display_num = " ";
     double val;
     int sign = 1;
+    bool decimal = 0;
 
 
 };

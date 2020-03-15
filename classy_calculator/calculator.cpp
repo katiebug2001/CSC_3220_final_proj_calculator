@@ -117,21 +117,22 @@ void Calculator::on_zero_button_clicked()
 
 void Calculator::on_decimal_button_clicked()
 {
-// TODO we can input 2 decimals in a row if they're the only thing on screen
-    bool decimal = 0;
-    for(int i = 0; i < digits; i++)
+// TODO we can input 2 decimals in a row if they're the only thing on scree
+    if(decimal == 0)
     {
-        if(display_num.at(i) == ".")
+        if(digits == 0)
         {
-            decimal = 1;
+            display_num.append("0.");
+            digits += 2;
         }
+        else
+        {
+            display_num.append(".");
+            digits += 1;
+        }
+        decimal = 1;
     }
-    if(decimal == 0 && digits <= 20)
-    {
-        display_num.append(".");
-        digits += 1;
-        ui->calc_input->setText(display_num);
-    }
+    ui->calc_input->setText(display_num);
 }
 
 void Calculator::on_changesign_button_clicked()
@@ -155,12 +156,22 @@ void Calculator::on_clear_button_clicked()
     display_num = " ";
     digits = 0;
     sign = 1;
+    decimal = 0;
     ui->calc_input->setText(display_num);
 }
 
 void Calculator::on_delete_button_clicked()
 {
+    if(display_num.at(digits) == ".")
+    {
+        decimal = 0;
+    }
     display_num.remove(digits,1);
     digits -= 1;
+    if(digits == 1 && display_num.at(digits) == "0")
+    {
+        display_num = " ";
+        digits = 0;
+    }
     ui->calc_input->setText(display_num);
 }

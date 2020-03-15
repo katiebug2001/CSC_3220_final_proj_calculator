@@ -17,7 +17,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    calculator.cpp
+    calculator.cpp \
+    themes.cpp
 
 HEADERS += \
     calculator.h
