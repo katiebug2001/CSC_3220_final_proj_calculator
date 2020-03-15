@@ -16,6 +16,10 @@ public:
     Calculator(QWidget *parent = nullptr);
     ~Calculator();
 
+private:
+    void set_to_base_state();
+    void set_display();
+
 private slots:
     void on_one_button_clicked();
 
@@ -59,10 +63,7 @@ private:
     int second_num = 0;
     Operation second_op;
     int trailing_num = 0;
-
-
-
-
+    State current_state;
 
     int digits;
     QString display_num = " ";
