@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>292</width>
+    <height>405</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QLineEdit" name="calc_input">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>20</x>
       <y>20</y>
       <width>221</width>
       <height>41</height>
@@ -38,7 +38,7 @@
    <widget class="QPushButton" name="one_button">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>20</x>
       <y>90</y>
       <width>61</width>
       <height>51</height>
@@ -51,7 +51,7 @@
    <widget class="QPushButton" name="two_button">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>80</x>
       <y>90</y>
       <width>61</width>
       <height>51</height>
@@ -64,7 +64,7 @@
    <widget class="QPushButton" name="three_button">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>140</x>
       <y>90</y>
       <width>61</width>
       <height>51</height>
@@ -77,7 +77,7 @@
    <widget class="QPushButton" name="four_button">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>20</x>
       <y>140</y>
       <width>61</width>
       <height>51</height>
@@ -90,7 +90,7 @@
    <widget class="QPushButton" name="five_button">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>80</x>
       <y>140</y>
       <width>61</width>
       <height>51</height>
@@ -103,7 +103,7 @@
    <widget class="QPushButton" name="seven_button">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>20</x>
       <y>190</y>
       <width>61</width>
       <height>51</height>
@@ -116,7 +116,7 @@
    <widget class="QPushButton" name="six_button">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>140</x>
       <y>140</y>
       <width>61</width>
       <height>51</height>
@@ -129,7 +129,7 @@
    <widget class="QPushButton" name="eight_button">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>80</x>
       <y>190</y>
       <width>61</width>
       <height>51</height>
@@ -142,7 +142,7 @@
    <widget class="QPushButton" name="zero_button">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>20</x>
       <y>240</y>
       <width>61</width>
       <height>51</height>
@@ -155,7 +155,7 @@
    <widget class="QPushButton" name="nine_button">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>140</x>
       <y>190</y>
       <width>61</width>
       <height>51</height>
@@ -168,7 +168,7 @@
    <widget class="QPushButton" name="decimal_button">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>80</x>
       <y>240</y>
       <width>61</width>
       <height>51</height>
@@ -181,7 +181,7 @@
    <widget class="QPushButton" name="changesign_button">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>140</x>
       <y>240</y>
       <width>61</width>
       <height>51</height>
@@ -194,7 +194,7 @@
    <widget class="QPushButton" name="enter_button">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>220</x>
       <y>300</y>
       <width>61</width>
       <height>51</height>
@@ -207,7 +207,7 @@
    <widget class="QPushButton" name="mult_button">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>220</x>
       <y>140</y>
       <width>61</width>
       <height>51</height>
@@ -220,7 +220,7 @@
    <widget class="QPushButton" name="div_button">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>220</x>
       <y>90</y>
       <width>61</width>
       <height>51</height>
@@ -233,7 +233,7 @@
    <widget class="QPushButton" name="minu_button">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>220</x>
       <y>190</y>
       <width>61</width>
       <height>51</height>
@@ -246,7 +246,7 @@
    <widget class="QPushButton" name="plus_button">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>220</x>
       <y>240</y>
       <width>61</width>
       <height>51</height>
@@ -259,7 +259,7 @@
    <widget class="QPushButton" name="clear_button">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>20</x>
       <y>300</y>
       <width>61</width>
       <height>51</height>
@@ -272,7 +272,7 @@
    <widget class="QPushButton" name="delete_button">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>80</x>
       <y>300</y>
       <width>61</width>
       <height>51</height>
@@ -288,8 +288,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>21</height>
+     <width>292</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>

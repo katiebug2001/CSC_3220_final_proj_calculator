@@ -47,16 +47,26 @@ private slots:
 
 private:
     Ui::Calculator *ui;
-    void foobar();
+    // state machine elements:
+    enum Operation { plus, minus, mult, div };
+    enum State { initial, transition_from_initial, transition, transition_from_transition,
+                 trailing, transition_from_trailing, equal};
 
-    void foo();
+    int first_num = 0;
+    Operation first_op;
+    int second_num = 0;
+    Operation second_op;
+    int trailing_num = 0;
 
-    void testmeee();
+
+
+
 
     int digits;
     QString display_num = " ";
     double val;
     int sign = 1;
+
 
 };
 #endif // CALCULATOR_H

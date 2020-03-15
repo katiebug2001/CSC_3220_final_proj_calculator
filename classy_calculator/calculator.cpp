@@ -7,30 +7,12 @@ Calculator::Calculator(QWidget *parent)
     , ui(new Ui::Calculator)
 {
     ui->setupUi(this);
-    foobar();
 }
 
 Calculator::~Calculator()
 {
     delete ui;
 }
-
-void Calculator::foobar()
-{
-    std::cout << "hello world" << std::endl;
-}
-
-void Calculator::testmeee()
-{
-    std::cout << "we're all gonna dieeeee" << std::endl;
-}
-
-void Calculator::foo()
-{
-    std::cout << "goodbye world" << std::endl;
-}
-
-
 
 void Calculator::on_one_button_clicked()
 {
@@ -124,6 +106,7 @@ void Calculator::on_nine_button_clicked()
 
 void Calculator::on_zero_button_clicked()
 {
+//TODO make it so 0's don't keep appearing if the only thing on the screen is 0
     if(digits <= 20)
     {
         display_num.append("0");
@@ -134,6 +117,7 @@ void Calculator::on_zero_button_clicked()
 
 void Calculator::on_decimal_button_clicked()
 {
+// TODO we can input 2 decimals in a row if they're the only thing on screen
     bool decimal = 0;
     for(int i = 0; i < digits; i++)
     {
