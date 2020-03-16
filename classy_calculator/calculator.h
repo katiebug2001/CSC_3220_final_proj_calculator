@@ -59,6 +59,8 @@ private slots:
 
     void on_actionNeon_triggered();
 
+    void on_actionPastel_Galaxy_Purple_triggered();
+
 private:
     Ui::Calculator *ui;
     // state machine elements:

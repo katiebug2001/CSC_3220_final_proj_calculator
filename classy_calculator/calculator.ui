@@ -423,6 +423,7 @@
       <string>Light</string>
      </property>
      <addaction name="actionPastelWinter_Blues"/>
+     <addaction name="actionPastel_Galaxy_Purple"/>
     </widget>
     <widget class="QMenu" name="menuDark">
      <property name="title">
@@ -466,6 +467,11 @@
   <action name="actionNeon">
    <property name="text">
     <string>Neon</string>
+   </property>
+  </action>
+  <action name="actionPastel_Galaxy_Purple">
+   <property name="text">
+    <string>Pastel Galaxy Purple</string>
    </property>
   </action>
  </widget>
