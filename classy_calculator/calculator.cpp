@@ -219,3 +219,5 @@ void Calculator::on_delete_button_clicked()
     ui->calc_input->setText(display_num);
     set_display();
 }
+
+

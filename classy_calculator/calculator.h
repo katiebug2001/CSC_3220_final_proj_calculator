@@ -51,6 +51,14 @@ private slots:
 
     void on_actionPastelWinter_Blues_triggered();
 
+    void on_actionDarkening_Storm_2_triggered();
+
+    void on_actionDarkening_Storm_3_triggered();
+
+    void on_actionSteampunk_d_triggered();
+
+    void on_actionNeon_triggered();
+
 private:
     Ui::Calculator *ui;
     // state machine elements:

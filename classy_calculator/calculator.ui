@@ -424,23 +424,25 @@
      </property>
      <addaction name="actionPastelWinter_Blues"/>
     </widget>
+    <widget class="QMenu" name="menuDark">
+     <property name="title">
+      <string>Dark</string>
+     </property>
+     <addaction name="actionDarkening_Storm_3"/>
+     <addaction name="actionSteampunk_d"/>
+    </widget>
+    <widget class="QMenu" name="menuVibrant">
+     <property name="title">
+      <string>Vibrant</string>
+     </property>
+     <addaction name="actionNeon"/>
+    </widget>
     <addaction name="menuLight"/>
-    <addaction name="actionDark"/>
-    <addaction name="actionVibrant"/>
-    <addaction name="actionSteampunk"/>
+    <addaction name="menuDark"/>
+    <addaction name="menuVibrant"/>
    </widget>
    <addaction name="menuTheme"/>
   </widget>
-  <action name="actionDark">
-   <property name="text">
-    <string>Dark</string>
-   </property>
-  </action>
-  <action name="actionVibrant">
-   <property name="text">
-    <string>Vibrant</string>
-   </property>
-  </action>
   <action name="actionSteampunk">
    <property name="text">
     <string>Steampunk</string>
@@ -449,6 +451,21 @@
   <action name="actionPastelWinter_Blues">
    <property name="text">
     <string>Pastel Winter Blues</string>
+   </property>
+  </action>
+  <action name="actionDarkening_Storm_3">
+   <property name="text">
+    <string>Darkening Storm</string>
+   </property>
+  </action>
+  <action name="actionSteampunk_d">
+   <property name="text">
+    <string>Steampunk'd</string>
+   </property>
+  </action>
+  <action name="actionNeon">
+   <property name="text">
+    <string>Neon</string>
    </property>
   </action>
  </widget>
