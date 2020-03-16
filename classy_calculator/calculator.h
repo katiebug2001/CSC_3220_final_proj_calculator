@@ -48,6 +48,7 @@ private slots:
 
     void on_delete_button_clicked();
 
+
     void on_plus_button_clicked();
 
     void on_minu_button_clicked();
@@ -58,33 +59,51 @@ private slots:
 
     void on_enter_button_clicked();
 
+    void on_actionPastelWinter_Blues_triggered();
+
+//    void on_actionDarkening_Storm_2_triggered();
+
+    void on_actionDarkening_Storm_3_triggered();
+
+    void on_actionSteampunk_d_triggered();
+
+    void on_actionNeon_triggered();
+
+    void on_actionPastel_Galaxy_Purple_triggered();
+
 private:
     Ui::Calculator *ui;
     // state machine elements:
     enum Operation { none, plus, minus, mult, div};
     enum State { enter_num1, enter_num2, enter_num3, display_result };
 
-    int first_num = 0;
+    // state machine attributes
+    float first_num = 0;
     Operation first_op = none;
-    int second_num = 0;
+    float second_num = 0;
     Operation second_op;
-    int third_num = 0;
+    float third_num = 0;
     State current_state = enter_num1;
 
-    int digits;
-    QString display_num = " ";
-    double val;
-    int sign = 1;
+    // other
+//    int digits;
+    QString display_num = "";
+    bool has_decimal = false;
+
+    const int max_display_len = 20;
+
 
 // member functions
     void reset_and_setup();
+    void reset_display_num();
     void set_display();
 
+    void handle_digit_input( QString digit );
     void handle_operation( Calculator::Operation this_op );
     void eval_current_input();
 
     // for evaluating an "a op b op c" format expression
-    int eval_with_order_of_ops();
+    float eval_with_order_of_ops();
 
     void show_state();
 };

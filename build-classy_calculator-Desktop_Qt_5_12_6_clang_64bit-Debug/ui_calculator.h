@@ -10,9 +10,11 @@
 #define UI_CALCULATOR_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
@@ -23,8 +25,13 @@ QT_BEGIN_NAMESPACE
 class Ui_Calculator
 {
 public:
+    QAction *actionSteampunk;
+    QAction *actionPastelWinter_Blues;
+    QAction *actionDarkening_Storm_3;
+    QAction *actionSteampunk_d;
+    QAction *actionNeon;
+    QAction *actionPastel_Galaxy_Purple;
     QWidget *centralwidget;
-    QLineEdit *calc_input;
     QPushButton *one_button;
     QPushButton *two_button;
     QPushButton *three_button;
@@ -44,88 +51,185 @@ public:
     QPushButton *plus_button;
     QPushButton *clear_button;
     QPushButton *delete_button;
-    QMenuBar *menubar;
+    QLabel *calc_input;
     QStatusBar *statusbar;
+    QMenuBar *menubar;
+    QMenu *menuTheme;
+    QMenu *menuLight;
+    QMenu *menuDark;
+    QMenu *menuVibrant;
 
     void setupUi(QMainWindow *Calculator)
     {
         if (Calculator->objectName().isEmpty())
             Calculator->setObjectName(QString::fromUtf8("Calculator"));
         Calculator->resize(292, 405);
+        actionSteampunk = new QAction(Calculator);
+        actionSteampunk->setObjectName(QString::fromUtf8("actionSteampunk"));
+        actionPastelWinter_Blues = new QAction(Calculator);
+        actionPastelWinter_Blues->setObjectName(QString::fromUtf8("actionPastelWinter_Blues"));
+        actionDarkening_Storm_3 = new QAction(Calculator);
+        actionDarkening_Storm_3->setObjectName(QString::fromUtf8("actionDarkening_Storm_3"));
+        actionSteampunk_d = new QAction(Calculator);
+        actionSteampunk_d->setObjectName(QString::fromUtf8("actionSteampunk_d"));
+        actionNeon = new QAction(Calculator);
+        actionNeon->setObjectName(QString::fromUtf8("actionNeon"));
+        actionPastel_Galaxy_Purple = new QAction(Calculator);
+        actionPastel_Galaxy_Purple->setObjectName(QString::fromUtf8("actionPastel_Galaxy_Purple"));
         centralwidget = new QWidget(Calculator);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        calc_input = new QLineEdit(centralwidget);
-        calc_input->setObjectName(QString::fromUtf8("calc_input"));
-        calc_input->setGeometry(QRect(20, 20, 221, 41));
-        QFont font;
-        font.setPointSize(14);
-        calc_input->setFont(font);
-        calc_input->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         one_button = new QPushButton(centralwidget);
         one_button->setObjectName(QString::fromUtf8("one_button"));
         one_button->setGeometry(QRect(20, 90, 61, 51));
+        QFont font;
+        font.setPointSize(12);
+        one_button->setFont(font);
+        one_button->setAutoFillBackground(true);
         two_button = new QPushButton(centralwidget);
         two_button->setObjectName(QString::fromUtf8("two_button"));
         two_button->setGeometry(QRect(80, 90, 61, 51));
+        two_button->setFont(font);
+        two_button->setAutoFillBackground(true);
         three_button = new QPushButton(centralwidget);
         three_button->setObjectName(QString::fromUtf8("three_button"));
         three_button->setGeometry(QRect(140, 90, 61, 51));
+        three_button->setFont(font);
+        three_button->setAutoFillBackground(true);
         four_button = new QPushButton(centralwidget);
         four_button->setObjectName(QString::fromUtf8("four_button"));
         four_button->setGeometry(QRect(20, 140, 61, 51));
+        four_button->setFont(font);
+        four_button->setAutoFillBackground(true);
         five_button = new QPushButton(centralwidget);
         five_button->setObjectName(QString::fromUtf8("five_button"));
         five_button->setGeometry(QRect(80, 140, 61, 51));
+        five_button->setFont(font);
+        five_button->setAutoFillBackground(true);
         seven_button = new QPushButton(centralwidget);
         seven_button->setObjectName(QString::fromUtf8("seven_button"));
         seven_button->setGeometry(QRect(20, 190, 61, 51));
+        seven_button->setFont(font);
+        seven_button->setAutoFillBackground(true);
         six_button = new QPushButton(centralwidget);
         six_button->setObjectName(QString::fromUtf8("six_button"));
         six_button->setGeometry(QRect(140, 140, 61, 51));
+        six_button->setFont(font);
+        six_button->setAutoFillBackground(true);
         eight_button = new QPushButton(centralwidget);
         eight_button->setObjectName(QString::fromUtf8("eight_button"));
         eight_button->setGeometry(QRect(80, 190, 61, 51));
+        eight_button->setFont(font);
+        eight_button->setAutoFillBackground(true);
         zero_button = new QPushButton(centralwidget);
         zero_button->setObjectName(QString::fromUtf8("zero_button"));
         zero_button->setGeometry(QRect(20, 240, 61, 51));
+        zero_button->setFont(font);
+        zero_button->setAutoFillBackground(true);
         nine_button = new QPushButton(centralwidget);
         nine_button->setObjectName(QString::fromUtf8("nine_button"));
         nine_button->setGeometry(QRect(140, 190, 61, 51));
+        nine_button->setFont(font);
+        nine_button->setAutoFillBackground(true);
         decimal_button = new QPushButton(centralwidget);
         decimal_button->setObjectName(QString::fromUtf8("decimal_button"));
         decimal_button->setGeometry(QRect(80, 240, 61, 51));
+        decimal_button->setFont(font);
+        decimal_button->setAutoFillBackground(true);
         changesign_button = new QPushButton(centralwidget);
         changesign_button->setObjectName(QString::fromUtf8("changesign_button"));
         changesign_button->setGeometry(QRect(140, 240, 61, 51));
+        changesign_button->setFont(font);
+        changesign_button->setAutoFillBackground(true);
         enter_button = new QPushButton(centralwidget);
         enter_button->setObjectName(QString::fromUtf8("enter_button"));
         enter_button->setGeometry(QRect(220, 300, 61, 51));
+        enter_button->setFont(font);
+        enter_button->setAutoFillBackground(true);
         mult_button = new QPushButton(centralwidget);
         mult_button->setObjectName(QString::fromUtf8("mult_button"));
         mult_button->setGeometry(QRect(220, 190, 61, 51));
+        mult_button->setFont(font);
+        mult_button->setAutoFillBackground(true);
         div_button = new QPushButton(centralwidget);
         div_button->setObjectName(QString::fromUtf8("div_button"));
         div_button->setGeometry(QRect(220, 240, 61, 51));
+        div_button->setFont(font);
+        div_button->setAutoFillBackground(true);
         minu_button = new QPushButton(centralwidget);
         minu_button->setObjectName(QString::fromUtf8("minu_button"));
         minu_button->setGeometry(QRect(220, 140, 61, 51));
+        minu_button->setFont(font);
+        minu_button->setAutoFillBackground(true);
         plus_button = new QPushButton(centralwidget);
         plus_button->setObjectName(QString::fromUtf8("plus_button"));
         plus_button->setGeometry(QRect(220, 90, 61, 51));
+        plus_button->setFont(font);
+        plus_button->setAutoFillBackground(true);
         clear_button = new QPushButton(centralwidget);
         clear_button->setObjectName(QString::fromUtf8("clear_button"));
         clear_button->setGeometry(QRect(20, 300, 61, 51));
+        clear_button->setFont(font);
+        clear_button->setAutoFillBackground(true);
         delete_button = new QPushButton(centralwidget);
         delete_button->setObjectName(QString::fromUtf8("delete_button"));
         delete_button->setGeometry(QRect(80, 300, 61, 51));
+        QFont font1;
+        font1.setPointSize(20);
+        delete_button->setFont(font1);
+        delete_button->setAutoFillBackground(true);
+        calc_input = new QLabel(centralwidget);
+        calc_input->setObjectName(QString::fromUtf8("calc_input"));
+        calc_input->setGeometry(QRect(20, 20, 261, 41));
+        calc_input->setFont(font);
+        calc_input->setFrameShape(QFrame::Box);
+        calc_input->setFrameShadow(QFrame::Plain);
+        calc_input->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         Calculator->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(Calculator);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 292, 22));
-        Calculator->setMenuBar(menubar);
+        calc_input->raise();
+        one_button->raise();
+        two_button->raise();
+        three_button->raise();
+        four_button->raise();
+        five_button->raise();
+        seven_button->raise();
+        six_button->raise();
+        eight_button->raise();
+        zero_button->raise();
+        nine_button->raise();
+        decimal_button->raise();
+        changesign_button->raise();
+        enter_button->raise();
+        mult_button->raise();
+        div_button->raise();
+        minu_button->raise();
+        plus_button->raise();
+        clear_button->raise();
+        delete_button->raise();
         statusbar = new QStatusBar(Calculator);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         Calculator->setStatusBar(statusbar);
+        menubar = new QMenuBar(Calculator);
+        menubar->setObjectName(QString::fromUtf8("menubar"));
+        menubar->setGeometry(QRect(0, 0, 292, 22));
+        menuTheme = new QMenu(menubar);
+        menuTheme->setObjectName(QString::fromUtf8("menuTheme"));
+        menuLight = new QMenu(menuTheme);
+        menuLight->setObjectName(QString::fromUtf8("menuLight"));
+        menuDark = new QMenu(menuTheme);
+        menuDark->setObjectName(QString::fromUtf8("menuDark"));
+        menuVibrant = new QMenu(menuTheme);
+        menuVibrant->setObjectName(QString::fromUtf8("menuVibrant"));
+        Calculator->setMenuBar(menubar);
+
+        menubar->addAction(menuTheme->menuAction());
+        menuTheme->addAction(menuLight->menuAction());
+        menuTheme->addAction(menuDark->menuAction());
+        menuTheme->addAction(menuVibrant->menuAction());
+        menuLight->addAction(actionPastelWinter_Blues);
+        menuLight->addAction(actionPastel_Galaxy_Purple);
+        menuDark->addAction(actionDarkening_Storm_3);
+        menuDark->addAction(actionSteampunk_d);
+        menuVibrant->addAction(actionNeon);
 
         retranslateUi(Calculator);
 
@@ -135,7 +239,12 @@ public:
     void retranslateUi(QMainWindow *Calculator)
     {
         Calculator->setWindowTitle(QApplication::translate("Calculator", "Calculator", nullptr));
-        calc_input->setText(QString());
+        actionSteampunk->setText(QApplication::translate("Calculator", "Steampunk", nullptr));
+        actionPastelWinter_Blues->setText(QApplication::translate("Calculator", "Pastel Winter Blues", nullptr));
+        actionDarkening_Storm_3->setText(QApplication::translate("Calculator", "Darkening Storm", nullptr));
+        actionSteampunk_d->setText(QApplication::translate("Calculator", "Steampunk'd", nullptr));
+        actionNeon->setText(QApplication::translate("Calculator", "Neon", nullptr));
+        actionPastel_Galaxy_Purple->setText(QApplication::translate("Calculator", "Pastel Galaxy Purple", nullptr));
         one_button->setText(QApplication::translate("Calculator", "1", nullptr));
         two_button->setText(QApplication::translate("Calculator", "2", nullptr));
         three_button->setText(QApplication::translate("Calculator", "3", nullptr));
@@ -154,7 +263,12 @@ public:
         minu_button->setText(QApplication::translate("Calculator", "-", nullptr));
         plus_button->setText(QApplication::translate("Calculator", "+", nullptr));
         clear_button->setText(QApplication::translate("Calculator", "AC", nullptr));
-        delete_button->setText(QApplication::translate("Calculator", "delete", nullptr));
+        delete_button->setText(QApplication::translate("Calculator", "\342\214\253", nullptr));
+        calc_input->setText(QString());
+        menuTheme->setTitle(QApplication::translate("Calculator", "Theme", nullptr));
+        menuLight->setTitle(QApplication::translate("Calculator", "Light", nullptr));
+        menuDark->setTitle(QApplication::translate("Calculator", "Dark", nullptr));
+        menuVibrant->setTitle(QApplication::translate("Calculator", "Vibrant", nullptr));
     } // retranslateUi
 
 };

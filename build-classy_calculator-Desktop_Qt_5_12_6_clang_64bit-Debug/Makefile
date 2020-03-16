@@ -53,9 +53,11 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../classy_calculator/main.cpp \
-		../classy_calculator/calculator.cpp moc_calculator.cpp
+		../classy_calculator/calculator.cpp \
+		../classy_calculator/themes.cpp moc_calculator.cpp
 OBJECTS       = main.o \
 		calculator.o \
+		themes.o \
 		moc_calculator.o
 DIST          = /Applications/QT/5.12.6/clang_64/mkspecs/features/spec_pre.prf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/qdevice.pri \
@@ -201,6 +203,7 @@ DIST          = /Applications/QT/5.12.6/clang_64/mkspecs/features/spec_pre.prf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/qt_config.prf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/macx-clang/qmake.conf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/spec_post.prf \
+		../classy_calculator/.qmake.stash \
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/exclusive_builds.prf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/mac/sdk.prf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/toolchain.prf \
@@ -229,7 +232,8 @@ DIST          = /Applications/QT/5.12.6/clang_64/mkspecs/features/spec_pre.prf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/yacc.prf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/lex.prf \
 		../classy_calculator/classy_calculator.pro ../classy_calculator/calculator.h ../classy_calculator/main.cpp \
-		../classy_calculator/calculator.cpp
+		../classy_calculator/calculator.cpp \
+		../classy_calculator/themes.cpp
 QMAKE_TARGET  = classy_calculator
 DESTDIR       = 
 TARGET        = classy_calculator.app/Contents/MacOS/classy_calculator
@@ -396,6 +400,7 @@ Makefile: ../classy_calculator/classy_calculator.pro /Applications/QT/5.12.6/cla
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/qt_config.prf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/macx-clang/qmake.conf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/exclusive_builds.prf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/mac/sdk.prf \
 		/Applications/QT/5.12.6/clang_64/mkspecs/features/toolchain.prf \
@@ -572,6 +577,7 @@ Makefile: ../classy_calculator/classy_calculator.pro /Applications/QT/5.12.6/cla
 /Applications/QT/5.12.6/clang_64/mkspecs/features/qt_config.prf:
 /Applications/QT/5.12.6/clang_64/mkspecs/macx-clang/qmake.conf:
 /Applications/QT/5.12.6/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /Applications/QT/5.12.6/clang_64/mkspecs/features/exclusive_builds.prf:
 /Applications/QT/5.12.6/clang_64/mkspecs/features/mac/sdk.prf:
 /Applications/QT/5.12.6/clang_64/mkspecs/features/toolchain.prf:
@@ -634,7 +640,7 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /Applications/QT/5.12.6/clang_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../classy_calculator/calculator.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../classy_calculator/main.cpp ../classy_calculator/calculator.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../classy_calculator/main.cpp ../classy_calculator/calculator.cpp ../classy_calculator/themes.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../classy_calculator/calculator.ui $(DISTDIR)/
 
 
@@ -645,6 +651,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r classy_calculator.app
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 
@@ -712,8 +719,16 @@ main.o: ../classy_calculator/main.cpp ../classy_calculator/calculator.h \
 calculator.o: ../classy_calculator/calculator.cpp ../classy_calculator/calculator.h \
 		/Applications/QT/5.12.6/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
 		/Applications/QT/5.12.6/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
-		ui_calculator.h
+		ui_calculator.h \
+		/Applications/QT/5.12.6/clang_64/lib/QtCore.framework/Headers/QDebug \
+		/Applications/QT/5.12.6/clang_64/lib/QtCore.framework/Headers/qdebug.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o calculator.o ../classy_calculator/calculator.cpp
+
+themes.o: ../classy_calculator/themes.cpp ../classy_calculator/calculator.h \
+		/Applications/QT/5.12.6/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
+		/Applications/QT/5.12.6/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		ui_calculator.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o themes.o ../classy_calculator/themes.cpp
 
 moc_calculator.o: moc_calculator.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_calculator.o moc_calculator.cpp
