@@ -468,7 +468,7 @@
      <x>0</x>
      <y>0</y>
      <width>292</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTheme">
@@ -481,6 +481,7 @@
      </property>
      <addaction name="actionPastelWinter_Blues"/>
      <addaction name="actionPastel_Galaxy_Purple"/>
+     <addaction name="actionUnicorn_Candy"/>
     </widget>
     <widget class="QMenu" name="menuDark">
      <property name="title">
@@ -488,16 +489,29 @@
      </property>
      <addaction name="actionDarkening_Storm_3"/>
      <addaction name="actionSteampunk_d"/>
+     <addaction name="actionNighttime_Forest_Mysteries"/>
+     <addaction name="actionFantasy_Forest"/>
     </widget>
     <widget class="QMenu" name="menuVibrant">
      <property name="title">
       <string>Vibrant</string>
      </property>
      <addaction name="actionNeon"/>
+     <addaction name="actionUnderwater"/>
+     <addaction name="actionVibrant_and_Elegant"/>
+    </widget>
+    <widget class="QMenu" name="menuMetallic">
+     <property name="title">
+      <string>Metallic</string>
+     </property>
+     <addaction name="actionCopper_Rose_Gold"/>
+     <addaction name="actionGold"/>
+     <addaction name="actionBronze_Copper"/>
     </widget>
     <addaction name="menuLight"/>
     <addaction name="menuDark"/>
     <addaction name="menuVibrant"/>
+    <addaction name="menuMetallic"/>
    </widget>
    <addaction name="menuTheme"/>
   </widget>
@@ -529,6 +543,46 @@
   <action name="actionPastel_Galaxy_Purple">
    <property name="text">
     <string>Pastel Galaxy Purple</string>
+   </property>
+  </action>
+  <action name="actionCopper_Rose_Gold">
+   <property name="text">
+    <string>Copper / Rose Gold</string>
+   </property>
+  </action>
+  <action name="actionGold">
+   <property name="text">
+    <string>Gold</string>
+   </property>
+  </action>
+  <action name="actionBronze_Copper">
+   <property name="text">
+    <string>Bronze</string>
+   </property>
+  </action>
+  <action name="actionUnicorn_Candy">
+   <property name="text">
+    <string>Unicorn Candy</string>
+   </property>
+  </action>
+  <action name="actionUnderwater">
+   <property name="text">
+    <string>Underwater</string>
+   </property>
+  </action>
+  <action name="actionVibrant_and_Elegant">
+   <property name="text">
+    <string>Vibrant and Elegant</string>
+   </property>
+  </action>
+  <action name="actionNighttime_Forest_Mysteries">
+   <property name="text">
+    <string>Nighttime Forest Mysteries</string>
+   </property>
+  </action>
+  <action name="actionFantasy_Forest">
+   <property name="text">
+    <string>Fantasy Forest</string>
    </property>
   </action>
  </widget>
