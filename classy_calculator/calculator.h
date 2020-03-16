@@ -2,6 +2,7 @@
 #define CALCULATOR_H
 
 #include <QMainWindow>
+#include <set>
 
 
 QT_BEGIN_NAMESPACE
@@ -16,9 +17,7 @@ public:
     Calculator(QWidget *parent = nullptr);
     ~Calculator();
 
-private:
-    void set_to_base_state();
-    void set_display();
+
 
 private slots:
     void on_one_button_clicked();
@@ -49,25 +48,44 @@ private slots:
 
     void on_delete_button_clicked();
 
+    void on_plus_button_clicked();
+
+    void on_minu_button_clicked();
+
+    void on_mult_button_clicked();
+
+    void on_div_button_clicked();
+
+    void on_enter_button_clicked();
+
 private:
     Ui::Calculator *ui;
     // state machine elements:
-    enum Operation { plus, minus, mult, div };
-    enum State { initial, transition_from_initial, transition, transition_from_transition,
-                 trailing, transition_from_trailing, equal};
+    enum Operation { none, plus, minus, mult, div};
+    enum State { enter_num1, enter_num2, enter_num3, display_result };
 
     int first_num = 0;
-    Operation first_op;
+    Operation first_op = none;
     int second_num = 0;
     Operation second_op;
-    int trailing_num = 0;
-    State current_state;
+    int third_num = 0;
+    State current_state = enter_num1;
 
     int digits;
     QString display_num = " ";
     double val;
     int sign = 1;
 
+// member functions
+    void reset_and_setup();
+    void set_display();
 
+    void handle_operation( Calculator::Operation this_op );
+    void eval_current_input();
+
+    // for evaluating an "a op b op c" format expression
+    int eval_with_order_of_ops();
+
+    void show_state();
 };
 #endif // CALCULATOR_H

@@ -102,16 +102,16 @@ public:
         enter_button->setGeometry(QRect(220, 300, 61, 51));
         mult_button = new QPushButton(centralwidget);
         mult_button->setObjectName(QString::fromUtf8("mult_button"));
-        mult_button->setGeometry(QRect(220, 140, 61, 51));
+        mult_button->setGeometry(QRect(220, 190, 61, 51));
         div_button = new QPushButton(centralwidget);
         div_button->setObjectName(QString::fromUtf8("div_button"));
-        div_button->setGeometry(QRect(220, 90, 61, 51));
+        div_button->setGeometry(QRect(220, 240, 61, 51));
         minu_button = new QPushButton(centralwidget);
         minu_button->setObjectName(QString::fromUtf8("minu_button"));
-        minu_button->setGeometry(QRect(220, 190, 61, 51));
+        minu_button->setGeometry(QRect(220, 140, 61, 51));
         plus_button = new QPushButton(centralwidget);
         plus_button->setObjectName(QString::fromUtf8("plus_button"));
-        plus_button->setGeometry(QRect(220, 240, 61, 51));
+        plus_button->setGeometry(QRect(220, 90, 61, 51));
         clear_button = new QPushButton(centralwidget);
         clear_button->setObjectName(QString::fromUtf8("clear_button"));
         clear_button->setGeometry(QRect(20, 300, 61, 51));
@@ -153,7 +153,7 @@ public:
         div_button->setText(QApplication::translate("Calculator", "\303\267", nullptr));
         minu_button->setText(QApplication::translate("Calculator", "-", nullptr));
         plus_button->setText(QApplication::translate("Calculator", "+", nullptr));
-        clear_button->setText(QApplication::translate("Calculator", "C", nullptr));
+        clear_button->setText(QApplication::translate("Calculator", "AC", nullptr));
         delete_button->setText(QApplication::translate("Calculator", "delete", nullptr));
     } // retranslateUi
 

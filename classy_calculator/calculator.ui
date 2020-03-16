@@ -208,7 +208,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>140</y>
+      <y>190</y>
       <width>61</width>
       <height>51</height>
      </rect>
@@ -221,7 +221,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>90</y>
+      <y>240</y>
       <width>61</width>
       <height>51</height>
      </rect>
@@ -234,7 +234,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>190</y>
+      <y>140</y>
       <width>61</width>
       <height>51</height>
      </rect>
@@ -247,7 +247,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>240</y>
+      <y>90</y>
       <width>61</width>
       <height>51</height>
      </rect>
@@ -266,7 +266,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>C</string>
+     <string>AC</string>
     </property>
    </widget>
    <widget class="QPushButton" name="delete_button">
