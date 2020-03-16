@@ -65,10 +65,8 @@ void Calculator::handle_digit_input( QString digit)
 void Calculator::handle_operation( Calculator::Operation this_op )
 {
     // initialize variable to hold result in case
-    // we want to do an intermediate evaluation to handle
-    // a op b op c op d, because we only have 3 spaces
-    // so we can clear state variables cleanly
-    int result;
+    // we want to clear state but save the current result
+    float result;
     switch ( current_state )
     {
     case 0: // enter_num1
@@ -94,9 +92,10 @@ void Calculator::handle_operation( Calculator::Operation this_op )
         current_state = State::enter_num2;
         break;
     case 3: // display_results
-        first_num = display_num.toFloat();
-        reset_display_num();
+        result = display_num.toFloat();
+        reset_and_setup();
         first_op = this_op;
+        first_num = result;
         current_state = enter_num2;
         break;
     }
@@ -117,6 +116,7 @@ void Calculator::eval_current_input()
         qDebug() << "it's an x op y ";
         second_num = display_num.toFloat();
         display_num = QString::number( eval_with_order_of_ops() );
+        break;
     case 2: // enter_num3
         third_num = display_num.toFloat();
         // evaluate order of operations
@@ -132,52 +132,9 @@ void Calculator::eval_current_input()
     show_state();
 }
 
-
-// evaluate "a op b op c", taking order of operations "PEMDAS" into account
-float Calculator::eval_with_order_of_ops()
+void Calculator::do_operation(float a, float b, Calculator::Operation op, float &result)
 {
-    qDebug() << "doing order of ops eval";
-    show_state();
-    bool first_is_add = ( first_op == plus ) || ( first_op == minus );
-    bool second_is_mult = ( second_op == mult ) || ( second_op == div );
-    qDebug() << "first is add: " << first_is_add
-             << "| second is mult: " << second_is_mult;
-
-    // put the expression in the form of a*b + c
-    // we reorder the expression here so we only need
-    // one switch statement for each operation later
-    float result = 0;
-    float a;
-    float b;
-    float c;
-    Operation temp_first_op;
-    Operation temp_second_op;
-
-    if ( first_is_add && second_is_mult ) // if the expression is currently x + y*z
-    {
-        // turn ( z + x*y ) into ( x*y + z )
-        qDebug() << "reordering expression";
-        a = second_num;
-        b = third_num;
-        c = first_num;
-        temp_first_op = second_op;
-        temp_second_op = first_op;
-    }
-    else
-        // the expression is already in the form a*b + c
-        // OR a*b*c
-        // OR a + b + c
-        // OR a op b
-    {
-        a = first_num;
-        b = second_num;
-        c = third_num;
-        temp_first_op = first_op;
-        temp_second_op = second_op;
-    }
-
-    // find (a op b)
-    switch( temp_first_op )
+    switch( op )
     {
 
     case 0: // none
@@ -195,25 +152,39 @@ float Calculator::eval_with_order_of_ops()
         result = a / b;
         break;
     }
+}
 
-    // find (a op b) op c
-    switch ( temp_second_op )
+
+// evaluate "a op b op c", taking order of operations "PEMDAS" into account
+float Calculator::eval_with_order_of_ops()
+{
+    qDebug() << "doing order of ops eval";
+    show_state();
+    bool first_is_add = ( first_op == plus ) || ( first_op == minus );
+    bool first_is_mult = ( first_op == mult ) || ( first_op == div );
+    bool second_is_add = ( second_op == plus ) || ( second_op == minus );
+    bool second_is_mult = ( second_op == mult ) || ( second_op == div );
+
+    float result;
+
+    qDebug() << "first is add: " << first_is_add
+             << " | first is mult: " << first_is_mult
+             << " || second is add: " << second_is_add
+             << "| second is mult: " << second_is_mult;
+    if ( first_is_add && second_is_mult ) // x + y*z
     {
-    case 0: // none
-        // note: this will trigger on expressions that are ONLY (a op b)
-        break;
-    case 1: // plus
-        result += c;
-        break;
-    case 2: // minus
-        result -= c;
-        break;
-    case 3: // mult
-        result *= c;
-        break;
-    case 4: // div
-        result /= c;
-        break;
+        do_operation( second_num, third_num, second_op, result ); // y * z
+        do_operation( first_num, result, first_op, result ); // x + ( y * z )
+    }
+    else if ( first_is_mult && second_is_add ) // x*y + z
+    {
+        do_operation( first_num, second_num, first_op, result ); // x * y
+        do_operation( result, third_num, second_op, result ); // (x*y) + z
+    }
+    else // x op y OR x*y*z OR x + y + z
+    {
+        do_operation( first_num, second_num, first_op, result); // x op y
+        do_operation(result, third_num, second_op, result); // (x op y) op z
     }
     qDebug() << "result: " << result;
     return result;
@@ -328,7 +299,7 @@ void Calculator::on_delete_button_clicked()
 {
     qDebug() << "delete button";
     int digits = display_num.size();
-    if ( digits != 0)
+    if ( digits != 0 && current_state != display_result )
     {
         if(display_num.at( digits - 1 ) == ".")
         {

@@ -101,6 +101,7 @@ private:
     void handle_digit_input( QString digit );
     void handle_operation( Calculator::Operation this_op );
     void eval_current_input();
+    void do_operation( float a, float b, Operation op, float& result);
 
     // for evaluating an "a op b op c" format expression
     float eval_with_order_of_ops();
