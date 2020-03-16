@@ -562,8 +562,11 @@
      <property name="title">
       <string>Light</string>
      </property>
+     <addaction name="actionCalming_Sea"/>
      <addaction name="actionPastelWinter_Blues"/>
      <addaction name="actionPastel_Galaxy_Purple"/>
+     <addaction name="actionPier_Blues"/>
+     <addaction name="actionSerenity"/>
      <addaction name="actionUnicorn_Candy"/>
     </widget>
     <widget class="QMenu" name="menuDark">
@@ -571,30 +574,34 @@
       <string>Dark</string>
      </property>
      <addaction name="actionDarkening_Storm_3"/>
-     <addaction name="actionSteampunk_d"/>
-     <addaction name="actionNighttime_Forest_Mysteries"/>
      <addaction name="actionFantasy_Forest"/>
+     <addaction name="actionGothic_Architecture"/>
+     <addaction name="actionNighttime_Forest_Mysteries"/>
+     <addaction name="actionSteampunk_d"/>
     </widget>
     <widget class="QMenu" name="menuVibrant">
      <property name="title">
       <string>Vibrant</string>
      </property>
+     <addaction name="actionNatural_Vibrancy"/>
      <addaction name="actionNeon"/>
      <addaction name="actionUnderwater"/>
+     <addaction name="actionUnderwater_Greens"/>
      <addaction name="actionVibrant_and_Elegant"/>
     </widget>
     <widget class="QMenu" name="menuMetallic">
      <property name="title">
       <string>Metallic</string>
      </property>
+     <addaction name="actionBronze_Copper"/>
      <addaction name="actionCopper_Rose_Gold"/>
      <addaction name="actionGold"/>
-     <addaction name="actionBronze_Copper"/>
     </widget>
     <addaction name="menuLight"/>
     <addaction name="menuDark"/>
     <addaction name="menuVibrant"/>
     <addaction name="menuMetallic"/>
+    <addaction name="actionDefault"/>
    </widget>
    <addaction name="menuTheme"/>
   </widget>
@@ -650,7 +657,7 @@
   </action>
   <action name="actionUnderwater">
    <property name="text">
-    <string>Underwater</string>
+    <string>Underwater Blues</string>
    </property>
   </action>
   <action name="actionVibrant_and_Elegant">
@@ -666,6 +673,41 @@
   <action name="actionFantasy_Forest">
    <property name="text">
     <string>Fantasy Forest</string>
+   </property>
+  </action>
+  <action name="actionDefault">
+   <property name="text">
+    <string>Default</string>
+   </property>
+  </action>
+  <action name="actionSerenity">
+   <property name="text">
+    <string>Serenity</string>
+   </property>
+  </action>
+  <action name="actionPier_Blues">
+   <property name="text">
+    <string>Pier Blues</string>
+   </property>
+  </action>
+  <action name="actionUnderwater_Greens">
+   <property name="text">
+    <string>Underwater Greens</string>
+   </property>
+  </action>
+  <action name="actionCalming_Sea">
+   <property name="text">
+    <string>Calming Sea</string>
+   </property>
+  </action>
+  <action name="actionNatural_Vibrancy">
+   <property name="text">
+    <string>Natural Vibrancy</string>
+   </property>
+  </action>
+  <action name="actionGothic_Architecture">
+   <property name="text">
+    <string>Gothic Architecture</string>
    </property>
   </action>
  </widget>

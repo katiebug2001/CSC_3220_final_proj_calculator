@@ -59,9 +59,11 @@ private slots:
 
     void on_enter_button_clicked();
 
-    void on_actionPastelWinter_Blues_triggered();
+    //theme applications//
 
-//    void on_actionDarkening_Storm_2_triggered();
+    void applyTheme(QPalette pal, QString nums, QString ops, QString displ, QString menu);
+
+    void on_actionPastelWinter_Blues_triggered();
 
     void on_actionDarkening_Storm_3_triggered();
 
@@ -86,6 +88,20 @@ private slots:
     void on_actionNighttime_Forest_Mysteries_triggered();
 
     void on_actionFantasy_Forest_triggered();
+
+    void on_actionDefault_triggered();
+
+    void on_actionSerenity_triggered();
+
+    void on_actionPier_Blues_triggered();
+
+    void on_actionUnderwater_Greens_triggered();
+
+    void on_actionCalming_Sea_triggered();
+
+    void on_actionNatural_Vibrancy_triggered();
+
+    void on_actionGothic_Architecture_triggered();
 
 private:
     Ui::Calculator *ui;
