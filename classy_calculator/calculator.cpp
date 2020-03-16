@@ -26,7 +26,9 @@ void Calculator::reset_and_setup()
     third_num = 0;
 
     reset_display_num();
-     current_state = State::enter_num1;
+    display_num = "0";
+    set_display();
+    current_state = State::enter_num1;
 }
 
 void Calculator::reset_display_num()
@@ -47,13 +49,20 @@ void Calculator::set_display()
 
 void Calculator::handle_digit_input( QString digit)
 {
+    qDebug() << "digit input: " << digit;
     if ( current_state != display_result )
     {
-        if( digit.size() <= max_display_len )
+        qDebug() << "state not 'display result'";
+        if ( display_num.toInt() == 0 )
+        {
+            qDebug() << "current display was 0";
+            display_num = digit;
+        }
+        else if( digit.size() <= max_display_len )
         {
             display_num.append( digit );
-            set_display();
         }
+        set_display();
     }
     else
     {

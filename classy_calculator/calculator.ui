@@ -13,6 +13,13 @@
   <property name="windowTitle">
    <string>Calculator</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton
+{
+	border:1px solid #000000;
+	font-size: 20px;
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="one_button">
     <property name="geometry">
@@ -25,14 +32,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>1</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="two_button">
@@ -46,14 +57,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>2</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="three_button">
@@ -67,14 +82,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>3</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="four_button">
@@ -88,14 +107,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>4</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="five_button">
@@ -109,14 +132,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>5</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="seven_button">
@@ -130,14 +157,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>7</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="six_button">
@@ -151,14 +182,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>6</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="eight_button">
@@ -172,14 +207,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>8</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="zero_button">
@@ -193,14 +232,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>0</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="nine_button">
@@ -214,14 +257,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>9</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="decimal_button">
@@ -235,14 +282,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>.</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="changesign_button">
@@ -256,14 +307,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>(-)</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="enter_button">
@@ -277,14 +332,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
-     <string>enter</string>
+     <string>=</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="mult_button">
@@ -298,14 +357,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>x</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="div_button">
@@ -319,14 +382,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>÷</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="minu_button">
@@ -340,14 +407,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>-</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="plus_button">
@@ -361,14 +432,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>+</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="clear_button">
@@ -382,14 +457,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>AC</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="delete_button">
@@ -403,14 +482,18 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>20</pointsize>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>⌫</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="calc_input">
@@ -468,7 +551,7 @@
      <x>0</x>
      <y>0</y>
      <width>292</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTheme">

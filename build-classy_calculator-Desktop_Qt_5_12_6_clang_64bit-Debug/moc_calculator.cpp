@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Calculator_t {
-    QByteArrayData data[26];
-    char stringdata0[631];
+    QByteArrayData data[34];
+    char stringdata0[906];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -56,7 +56,15 @@ QT_MOC_LITERAL(21, 461, 37), // "on_actionPastelWinter_Blues_t..."
 QT_MOC_LITERAL(22, 499, 36), // "on_actionDarkening_Storm_3_tr..."
 QT_MOC_LITERAL(23, 536, 30), // "on_actionSteampunk_d_triggered"
 QT_MOC_LITERAL(24, 567, 23), // "on_actionNeon_triggered"
-QT_MOC_LITERAL(25, 591, 39) // "on_actionPastel_Galaxy_Purple..."
+QT_MOC_LITERAL(25, 591, 39), // "on_actionPastel_Galaxy_Purple..."
+QT_MOC_LITERAL(26, 631, 32), // "on_actionBronze_Copper_triggered"
+QT_MOC_LITERAL(27, 664, 23), // "on_actionGold_triggered"
+QT_MOC_LITERAL(28, 688, 35), // "on_actionCopper_Rose_Gold_tri..."
+QT_MOC_LITERAL(29, 724, 29), // "on_actionUnderwater_triggered"
+QT_MOC_LITERAL(30, 754, 32), // "on_actionUnicorn_Candy_triggered"
+QT_MOC_LITERAL(31, 787, 38), // "on_actionVibrant_and_Elegant_..."
+QT_MOC_LITERAL(32, 826, 45), // "on_actionNighttime_Forest_Mys..."
+QT_MOC_LITERAL(33, 872, 33) // "on_actionFantasy_Forest_trigg..."
 
     },
     "Calculator\0on_one_button_clicked\0\0"
@@ -75,7 +83,15 @@ QT_MOC_LITERAL(25, 591, 39) // "on_actionPastel_Galaxy_Purple..."
     "on_actionDarkening_Storm_3_triggered\0"
     "on_actionSteampunk_d_triggered\0"
     "on_actionNeon_triggered\0"
-    "on_actionPastel_Galaxy_Purple_triggered"
+    "on_actionPastel_Galaxy_Purple_triggered\0"
+    "on_actionBronze_Copper_triggered\0"
+    "on_actionGold_triggered\0"
+    "on_actionCopper_Rose_Gold_triggered\0"
+    "on_actionUnderwater_triggered\0"
+    "on_actionUnicorn_Candy_triggered\0"
+    "on_actionVibrant_and_Elegant_triggered\0"
+    "on_actionNighttime_Forest_Mysteries_triggered\0"
+    "on_actionFantasy_Forest_triggered"
 };
 #undef QT_MOC_LITERAL
 
@@ -85,7 +101,7 @@ static const uint qt_meta_data_Calculator[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      24,   14, // methods
+      32,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -93,32 +109,48 @@ static const uint qt_meta_data_Calculator[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,  134,    2, 0x08 /* Private */,
-       3,    0,  135,    2, 0x08 /* Private */,
-       4,    0,  136,    2, 0x08 /* Private */,
-       5,    0,  137,    2, 0x08 /* Private */,
-       6,    0,  138,    2, 0x08 /* Private */,
-       7,    0,  139,    2, 0x08 /* Private */,
-       8,    0,  140,    2, 0x08 /* Private */,
-       9,    0,  141,    2, 0x08 /* Private */,
-      10,    0,  142,    2, 0x08 /* Private */,
-      11,    0,  143,    2, 0x08 /* Private */,
-      12,    0,  144,    2, 0x08 /* Private */,
-      13,    0,  145,    2, 0x08 /* Private */,
-      14,    0,  146,    2, 0x08 /* Private */,
-      15,    0,  147,    2, 0x08 /* Private */,
-      16,    0,  148,    2, 0x08 /* Private */,
-      17,    0,  149,    2, 0x08 /* Private */,
-      18,    0,  150,    2, 0x08 /* Private */,
-      19,    0,  151,    2, 0x08 /* Private */,
-      20,    0,  152,    2, 0x08 /* Private */,
-      21,    0,  153,    2, 0x08 /* Private */,
-      22,    0,  154,    2, 0x08 /* Private */,
-      23,    0,  155,    2, 0x08 /* Private */,
-      24,    0,  156,    2, 0x08 /* Private */,
-      25,    0,  157,    2, 0x08 /* Private */,
+       1,    0,  174,    2, 0x08 /* Private */,
+       3,    0,  175,    2, 0x08 /* Private */,
+       4,    0,  176,    2, 0x08 /* Private */,
+       5,    0,  177,    2, 0x08 /* Private */,
+       6,    0,  178,    2, 0x08 /* Private */,
+       7,    0,  179,    2, 0x08 /* Private */,
+       8,    0,  180,    2, 0x08 /* Private */,
+       9,    0,  181,    2, 0x08 /* Private */,
+      10,    0,  182,    2, 0x08 /* Private */,
+      11,    0,  183,    2, 0x08 /* Private */,
+      12,    0,  184,    2, 0x08 /* Private */,
+      13,    0,  185,    2, 0x08 /* Private */,
+      14,    0,  186,    2, 0x08 /* Private */,
+      15,    0,  187,    2, 0x08 /* Private */,
+      16,    0,  188,    2, 0x08 /* Private */,
+      17,    0,  189,    2, 0x08 /* Private */,
+      18,    0,  190,    2, 0x08 /* Private */,
+      19,    0,  191,    2, 0x08 /* Private */,
+      20,    0,  192,    2, 0x08 /* Private */,
+      21,    0,  193,    2, 0x08 /* Private */,
+      22,    0,  194,    2, 0x08 /* Private */,
+      23,    0,  195,    2, 0x08 /* Private */,
+      24,    0,  196,    2, 0x08 /* Private */,
+      25,    0,  197,    2, 0x08 /* Private */,
+      26,    0,  198,    2, 0x08 /* Private */,
+      27,    0,  199,    2, 0x08 /* Private */,
+      28,    0,  200,    2, 0x08 /* Private */,
+      29,    0,  201,    2, 0x08 /* Private */,
+      30,    0,  202,    2, 0x08 /* Private */,
+      31,    0,  203,    2, 0x08 /* Private */,
+      32,    0,  204,    2, 0x08 /* Private */,
+      33,    0,  205,    2, 0x08 /* Private */,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -177,6 +209,14 @@ void Calculator::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 21: _t->on_actionSteampunk_d_triggered(); break;
         case 22: _t->on_actionNeon_triggered(); break;
         case 23: _t->on_actionPastel_Galaxy_Purple_triggered(); break;
+        case 24: _t->on_actionBronze_Copper_triggered(); break;
+        case 25: _t->on_actionGold_triggered(); break;
+        case 26: _t->on_actionCopper_Rose_Gold_triggered(); break;
+        case 27: _t->on_actionUnderwater_triggered(); break;
+        case 28: _t->on_actionUnicorn_Candy_triggered(); break;
+        case 29: _t->on_actionVibrant_and_Elegant_triggered(); break;
+        case 30: _t->on_actionNighttime_Forest_Mysteries_triggered(); break;
+        case 31: _t->on_actionFantasy_Forest_triggered(); break;
         default: ;
         }
     }
@@ -212,13 +252,13 @@ int Calculator::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 24)
+        if (_id < 32)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 24;
+        _id -= 32;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 24)
+        if (_id < 32)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 24;
+        _id -= 32;
     }
     return _id;
 }
