@@ -340,3 +340,6 @@ void Calculator::on_enter_button_clicked()
     qDebug() << "evaluating";
     eval_current_input();
 }
+
+
+

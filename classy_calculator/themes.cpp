@@ -155,7 +155,7 @@ void Calculator::on_actionSteampunk_d_triggered()
                           "font: italic 14pt 'Monotype Corsiva'";
     QString menuBackground = "background-color: rgb(69,22,6)";
     QString menuText = "color: rgb(174,135,42);"
-                       "font: 14pt 'Monotype Corsiva'";
+                       "font: 12pt 'Monotype Corsiva'";
 
     QString displayColors = displayBackground + ";" + displayText;
     QString buttonColors = buttonBackground +";" + buttonText;
@@ -361,4 +361,580 @@ void Calculator::on_actionPastel_Galaxy_Purple_triggered()
     ui->plus_button->setStyleSheet(buttonColors);
     ui->minu_button->setStyleSheet(buttonColors);
     ui->enter_button->setStyleSheet(buttonColors);
+}
+
+void Calculator::on_actionGold_triggered()
+{
+    QPalette palWin = palette();
+    QString buttonBackground = "background-color: rgb(179,151,104);";
+    QString buttonText = "color: rgb(0,0,0);";
+    QString buttonOpBackground = "background-color: rgb(138,119,89);";
+    QString buttonOpText = "color: rgb(255,255,255);";
+    QString displayBackground = "background-color: rgb(193,162,115);";
+    QString displayText = "color: rgb(0,0,0);";
+    QString menuBackground = "background-color: rgb(138,119,89)";
+    QString menuText = "color: rgb(255,255,255);";
+
+    QString displayColors = displayBackground + ";" + displayText;
+    QString buttonColors = buttonBackground +";" + buttonText;
+    QString menuColors = menuBackground + ";" + menuText;
+    QString buttonOpColors = buttonOpBackground +";" + buttonOpText;
+
+
+    palWin.setColor(QPalette::Window,QColor::fromRgb(162,133,91));
+
+    ui->centralwidget->setAutoFillBackground(true);
+    ui->centralwidget->setPalette(palWin);
+
+    ui->calc_input->setAutoFillBackground(true);
+    ui->calc_input->setStyleSheet(displayColors);
+
+    ui->menubar->setAutoFillBackground(true);
+    ui->menubar->setStyleSheet(menuColors);
+
+    ui->div_button->setAutoFillBackground(true);
+    ui->one_button->setAutoFillBackground(true);
+    ui->two_button->setAutoFillBackground(true);
+    ui->three_button->setAutoFillBackground(true);
+    ui->four_button->setAutoFillBackground(true);
+    ui->five_button->setAutoFillBackground(true);
+    ui->six_button->setAutoFillBackground(true);
+    ui->seven_button->setAutoFillBackground(true);
+    ui->eight_button->setAutoFillBackground(true);
+    ui->nine_button->setAutoFillBackground(true);
+    ui->zero_button->setAutoFillBackground(true);
+    ui->changesign_button->setAutoFillBackground(true);
+    ui->clear_button->setAutoFillBackground(true);
+    ui->decimal_button->setAutoFillBackground(true);
+    ui->delete_button->setAutoFillBackground(true);
+    ui->div_button->setAutoFillBackground(true);
+    ui->mult_button->setAutoFillBackground(true);
+    ui->plus_button->setAutoFillBackground(true);
+    ui->minu_button->setAutoFillBackground(true);
+    ui->enter_button->setAutoFillBackground(true);
+
+    ui->div_button->setStyleSheet(buttonColors);
+    ui->one_button->setStyleSheet(buttonColors);
+    ui->two_button->setStyleSheet(buttonColors);
+    ui->three_button->setStyleSheet(buttonColors);
+    ui->four_button->setStyleSheet(buttonColors);
+    ui->five_button->setStyleSheet(buttonColors);
+    ui->six_button->setStyleSheet(buttonColors);
+    ui->seven_button->setStyleSheet(buttonColors);
+    ui->eight_button->setStyleSheet(buttonColors);
+    ui->nine_button->setStyleSheet(buttonColors);
+    ui->zero_button->setStyleSheet(buttonColors);
+    ui->changesign_button->setStyleSheet(buttonColors);
+    ui->clear_button->setStyleSheet(buttonOpColors);
+    ui->decimal_button->setStyleSheet(buttonColors);
+    ui->delete_button->setStyleSheet(buttonOpColors);
+    ui->div_button->setStyleSheet(buttonOpColors);
+    ui->mult_button->setStyleSheet(buttonOpColors);
+    ui->plus_button->setStyleSheet(buttonOpColors);
+    ui->minu_button->setStyleSheet(buttonOpColors);
+    ui->enter_button->setStyleSheet(buttonOpColors);
+}
+
+void Calculator::on_actionCopper_Rose_Gold_triggered()
+{
+    QPalette palWin = palette();
+    QString buttonBackground = "background-color: rgb(187,120,91);";
+    QString buttonText = "color: rgb(0,0,0);";
+    QString buttonOpBackground = "background-color: rgb(169,97,72);";
+    QString buttonOpText = "color: rgb(255,255,255);";
+    QString displayBackground = "background-color: rgb(191,129,106);";
+    QString displayText = "color: rgb(0,0,0);";
+    QString menuBackground = "background-color: rgb(169,97,72)";
+    QString menuText = "color: rgb(255,255,255);";
+
+    QString displayColors = displayBackground + ";" + displayText;
+    QString buttonColors = buttonBackground +";" + buttonText;
+    QString menuColors = menuBackground + ";" + menuText;
+    QString buttonOpColors = buttonOpBackground +";" + buttonOpText;
+
+
+    palWin.setColor(QPalette::Window,QColor::fromRgb(178,120,98));
+
+    ui->centralwidget->setAutoFillBackground(true);
+    ui->centralwidget->setPalette(palWin);
+
+    ui->calc_input->setAutoFillBackground(true);
+    ui->calc_input->setStyleSheet(displayColors);
+
+    ui->menubar->setAutoFillBackground(true);
+    ui->menubar->setStyleSheet(menuColors);
+
+    ui->div_button->setAutoFillBackground(true);
+    ui->one_button->setAutoFillBackground(true);
+    ui->two_button->setAutoFillBackground(true);
+    ui->three_button->setAutoFillBackground(true);
+    ui->four_button->setAutoFillBackground(true);
+    ui->five_button->setAutoFillBackground(true);
+    ui->six_button->setAutoFillBackground(true);
+    ui->seven_button->setAutoFillBackground(true);
+    ui->eight_button->setAutoFillBackground(true);
+    ui->nine_button->setAutoFillBackground(true);
+    ui->zero_button->setAutoFillBackground(true);
+    ui->changesign_button->setAutoFillBackground(true);
+    ui->clear_button->setAutoFillBackground(true);
+    ui->decimal_button->setAutoFillBackground(true);
+    ui->delete_button->setAutoFillBackground(true);
+    ui->div_button->setAutoFillBackground(true);
+    ui->mult_button->setAutoFillBackground(true);
+    ui->plus_button->setAutoFillBackground(true);
+    ui->minu_button->setAutoFillBackground(true);
+    ui->enter_button->setAutoFillBackground(true);
+
+    ui->div_button->setStyleSheet(buttonColors);
+    ui->one_button->setStyleSheet(buttonColors);
+    ui->two_button->setStyleSheet(buttonColors);
+    ui->three_button->setStyleSheet(buttonColors);
+    ui->four_button->setStyleSheet(buttonColors);
+    ui->five_button->setStyleSheet(buttonColors);
+    ui->six_button->setStyleSheet(buttonColors);
+    ui->seven_button->setStyleSheet(buttonColors);
+    ui->eight_button->setStyleSheet(buttonColors);
+    ui->nine_button->setStyleSheet(buttonColors);
+    ui->zero_button->setStyleSheet(buttonColors);
+    ui->changesign_button->setStyleSheet(buttonColors);
+    ui->clear_button->setStyleSheet(buttonOpColors);
+    ui->decimal_button->setStyleSheet(buttonColors);
+    ui->delete_button->setStyleSheet(buttonOpColors);
+    ui->div_button->setStyleSheet(buttonOpColors);
+    ui->mult_button->setStyleSheet(buttonOpColors);
+    ui->plus_button->setStyleSheet(buttonOpColors);
+    ui->minu_button->setStyleSheet(buttonOpColors);
+    ui->enter_button->setStyleSheet(buttonOpColors);
+}
+
+void Calculator::on_actionBronze_Copper_triggered()
+{
+    QPalette palWin = palette();
+    QString buttonBackground = "background-color: rgb(166,129,100);";
+    QString buttonText = "color: rgb(0,0,0);";
+    QString buttonOpBackground = "background-color: rgb(152,117,89);";
+    QString buttonOpText = "color: rgb(255,255,255);";
+    QString displayBackground = "background-color: rgb(169,133,101);";
+    QString displayText = "color: rgb(0,0,0);";
+    QString menuBackground = "background-color: rgb(131,100,72)";
+    QString menuText = "color: rgb(0,0,0);";
+
+    QString displayColors = displayBackground + ";" + displayText;
+    QString buttonColors = buttonBackground +";" + buttonText;
+    QString menuColors = menuBackground + ";" + menuText;
+    QString buttonOpColors = buttonOpBackground +";" + buttonOpText;
+
+
+    palWin.setColor(QPalette::Window,QColor::fromRgb(153,118,88));
+
+    ui->centralwidget->setAutoFillBackground(true);
+    ui->centralwidget->setPalette(palWin);
+
+    ui->calc_input->setAutoFillBackground(true);
+    ui->calc_input->setStyleSheet(displayColors);
+
+    ui->menubar->setAutoFillBackground(true);
+    ui->menubar->setStyleSheet(menuColors);
+
+    ui->div_button->setAutoFillBackground(true);
+    ui->one_button->setAutoFillBackground(true);
+    ui->two_button->setAutoFillBackground(true);
+    ui->three_button->setAutoFillBackground(true);
+    ui->four_button->setAutoFillBackground(true);
+    ui->five_button->setAutoFillBackground(true);
+    ui->six_button->setAutoFillBackground(true);
+    ui->seven_button->setAutoFillBackground(true);
+    ui->eight_button->setAutoFillBackground(true);
+    ui->nine_button->setAutoFillBackground(true);
+    ui->zero_button->setAutoFillBackground(true);
+    ui->changesign_button->setAutoFillBackground(true);
+    ui->clear_button->setAutoFillBackground(true);
+    ui->decimal_button->setAutoFillBackground(true);
+    ui->delete_button->setAutoFillBackground(true);
+    ui->div_button->setAutoFillBackground(true);
+    ui->mult_button->setAutoFillBackground(true);
+    ui->plus_button->setAutoFillBackground(true);
+    ui->minu_button->setAutoFillBackground(true);
+    ui->enter_button->setAutoFillBackground(true);
+
+    ui->div_button->setStyleSheet(buttonColors);
+    ui->one_button->setStyleSheet(buttonColors);
+    ui->two_button->setStyleSheet(buttonColors);
+    ui->three_button->setStyleSheet(buttonColors);
+    ui->four_button->setStyleSheet(buttonColors);
+    ui->five_button->setStyleSheet(buttonColors);
+    ui->six_button->setStyleSheet(buttonColors);
+    ui->seven_button->setStyleSheet(buttonColors);
+    ui->eight_button->setStyleSheet(buttonColors);
+    ui->nine_button->setStyleSheet(buttonColors);
+    ui->zero_button->setStyleSheet(buttonColors);
+    ui->changesign_button->setStyleSheet(buttonColors);
+    ui->clear_button->setStyleSheet(buttonOpColors);
+    ui->decimal_button->setStyleSheet(buttonColors);
+    ui->delete_button->setStyleSheet(buttonOpColors);
+    ui->div_button->setStyleSheet(buttonOpColors);
+    ui->mult_button->setStyleSheet(buttonOpColors);
+    ui->plus_button->setStyleSheet(buttonOpColors);
+    ui->minu_button->setStyleSheet(buttonOpColors);
+    ui->enter_button->setStyleSheet(buttonOpColors);
+}
+
+void Calculator::on_actionVibrant_and_Elegant_triggered()
+{
+    QPalette palWin = palette();
+    QString buttonBackground = "background-color: rgb(36,48,94);";
+    QString buttonText = "color: rgb(248,233,161);";
+    QString buttonOpBackground = "background-color: rgb(36,48,94);";
+    QString buttonOpText = "color: rgb(248,233,161);";
+    QString displayBackground = "background-color: rgb(168,208,230);";
+    QString displayText = "color: rgb(0,0,0);";
+    QString menuBackground = "background-color: rgb(36,48,94)";
+    QString menuText = "color: rgb(248,233,161);";
+
+    QString displayColors = displayBackground + ";" + displayText;
+    QString buttonColors = buttonBackground +";" + buttonText;
+    QString menuColors = menuBackground + ";" + menuText;
+    QString buttonOpColors = buttonOpBackground +";" + buttonOpText;
+
+
+    palWin.setColor(QPalette::Window,QColor::fromRgb(55,71,133));
+
+    ui->centralwidget->setAutoFillBackground(true);
+    ui->centralwidget->setPalette(palWin);
+
+    ui->calc_input->setAutoFillBackground(true);
+    ui->calc_input->setStyleSheet(displayColors);
+
+    ui->menubar->setAutoFillBackground(true);
+    ui->menubar->setStyleSheet(menuColors);
+
+    ui->div_button->setAutoFillBackground(true);
+    ui->one_button->setAutoFillBackground(true);
+    ui->two_button->setAutoFillBackground(true);
+    ui->three_button->setAutoFillBackground(true);
+    ui->four_button->setAutoFillBackground(true);
+    ui->five_button->setAutoFillBackground(true);
+    ui->six_button->setAutoFillBackground(true);
+    ui->seven_button->setAutoFillBackground(true);
+    ui->eight_button->setAutoFillBackground(true);
+    ui->nine_button->setAutoFillBackground(true);
+    ui->zero_button->setAutoFillBackground(true);
+    ui->changesign_button->setAutoFillBackground(true);
+    ui->clear_button->setAutoFillBackground(true);
+    ui->decimal_button->setAutoFillBackground(true);
+    ui->delete_button->setAutoFillBackground(true);
+    ui->div_button->setAutoFillBackground(true);
+    ui->mult_button->setAutoFillBackground(true);
+    ui->plus_button->setAutoFillBackground(true);
+    ui->minu_button->setAutoFillBackground(true);
+    ui->enter_button->setAutoFillBackground(true);
+
+    ui->div_button->setStyleSheet(buttonColors);
+    ui->one_button->setStyleSheet(buttonColors);
+    ui->two_button->setStyleSheet(buttonColors);
+    ui->three_button->setStyleSheet(buttonColors);
+    ui->four_button->setStyleSheet(buttonColors);
+    ui->five_button->setStyleSheet(buttonColors);
+    ui->six_button->setStyleSheet(buttonColors);
+    ui->seven_button->setStyleSheet(buttonColors);
+    ui->eight_button->setStyleSheet(buttonColors);
+    ui->nine_button->setStyleSheet(buttonColors);
+    ui->zero_button->setStyleSheet(buttonColors);
+    ui->changesign_button->setStyleSheet(buttonColors);
+    ui->clear_button->setStyleSheet(buttonOpColors);
+    ui->decimal_button->setStyleSheet(buttonColors);
+    ui->delete_button->setStyleSheet(buttonOpColors);
+    ui->div_button->setStyleSheet(buttonOpColors);
+    ui->mult_button->setStyleSheet(buttonOpColors);
+    ui->plus_button->setStyleSheet(buttonOpColors);
+    ui->minu_button->setStyleSheet(buttonOpColors);
+    ui->enter_button->setStyleSheet(buttonOpColors);
+}
+
+void Calculator::on_actionUnderwater_triggered()
+{
+    QPalette palWin = palette();
+    QString buttonBackground = "background-color: rgb(0,194,199);";
+    QString buttonText = "color: rgb(218,248,227); font: bold;";
+    QString buttonOpBackground = "background-color: rgb(0,85,130);";
+    QString buttonOpText = "color: rgb(218,248,227);";
+    QString displayBackground = "background-color: rgb(151,235,219);";
+    QString displayText = "color: rgb(0,0,0);";
+    QString menuBackground = "background-color: rgb(0,85,130)";
+    QString menuText = "color: rgb(218,248,227);";
+
+    QString displayColors = displayBackground + ";" + displayText;
+    QString buttonColors = buttonBackground +";" + buttonText;
+    QString menuColors = menuBackground + ";" + menuText;
+    QString buttonOpColors = buttonOpBackground +";" + buttonOpText;
+
+
+    palWin.setColor(QPalette::Window,QColor::fromRgb(0,134,173));
+
+    ui->centralwidget->setAutoFillBackground(true);
+    ui->centralwidget->setPalette(palWin);
+
+    ui->calc_input->setAutoFillBackground(true);
+    ui->calc_input->setStyleSheet(displayColors);
+
+    ui->menubar->setAutoFillBackground(true);
+    ui->menubar->setStyleSheet(menuColors);
+
+    ui->div_button->setAutoFillBackground(true);
+    ui->one_button->setAutoFillBackground(true);
+    ui->two_button->setAutoFillBackground(true);
+    ui->three_button->setAutoFillBackground(true);
+    ui->four_button->setAutoFillBackground(true);
+    ui->five_button->setAutoFillBackground(true);
+    ui->six_button->setAutoFillBackground(true);
+    ui->seven_button->setAutoFillBackground(true);
+    ui->eight_button->setAutoFillBackground(true);
+    ui->nine_button->setAutoFillBackground(true);
+    ui->zero_button->setAutoFillBackground(true);
+    ui->changesign_button->setAutoFillBackground(true);
+    ui->clear_button->setAutoFillBackground(true);
+    ui->decimal_button->setAutoFillBackground(true);
+    ui->delete_button->setAutoFillBackground(true);
+    ui->div_button->setAutoFillBackground(true);
+    ui->mult_button->setAutoFillBackground(true);
+    ui->plus_button->setAutoFillBackground(true);
+    ui->minu_button->setAutoFillBackground(true);
+    ui->enter_button->setAutoFillBackground(true);
+
+    ui->div_button->setStyleSheet(buttonColors);
+    ui->one_button->setStyleSheet(buttonColors);
+    ui->two_button->setStyleSheet(buttonColors);
+    ui->three_button->setStyleSheet(buttonColors);
+    ui->four_button->setStyleSheet(buttonColors);
+    ui->five_button->setStyleSheet(buttonColors);
+    ui->six_button->setStyleSheet(buttonColors);
+    ui->seven_button->setStyleSheet(buttonColors);
+    ui->eight_button->setStyleSheet(buttonColors);
+    ui->nine_button->setStyleSheet(buttonColors);
+    ui->zero_button->setStyleSheet(buttonColors);
+    ui->changesign_button->setStyleSheet(buttonColors);
+    ui->clear_button->setStyleSheet(buttonOpColors);
+    ui->decimal_button->setStyleSheet(buttonColors);
+    ui->delete_button->setStyleSheet(buttonOpColors);
+    ui->div_button->setStyleSheet(buttonOpColors);
+    ui->mult_button->setStyleSheet(buttonOpColors);
+    ui->plus_button->setStyleSheet(buttonOpColors);
+    ui->minu_button->setStyleSheet(buttonOpColors);
+    ui->enter_button->setStyleSheet(buttonOpColors);
+}
+
+void Calculator::on_actionUnicorn_Candy_triggered()
+{
+    QPalette palWin = palette();
+    QString buttonBackground = "background-color: rgb(238,213,255);";
+    QString buttonText = "color: rgb(0,0,0);";
+    QString buttonOpBackground = "background-color: rgb(255,192,215);";
+    QString buttonOpText = "color: rgb(0,0,0);";
+    QString displayBackground = "background-color: rgb(255,249,193);";
+    QString displayText = "color: rgb(0,0,0);";
+    QString menuBackground = "background-color: rgb(207,235,210)";
+    QString menuText = "color: rgb(0,0,0);";
+
+    QString displayColors = displayBackground + ";" + displayText;
+    QString buttonColors = buttonBackground +";" + buttonText;
+    QString menuColors = menuBackground + ";" + menuText;
+    QString buttonOpColors = buttonOpBackground +";" + buttonOpText;
+
+
+    palWin.setColor(QPalette::Window,QColor::fromRgb(208,244,244));
+
+    ui->centralwidget->setAutoFillBackground(true);
+    ui->centralwidget->setPalette(palWin);
+
+    ui->calc_input->setAutoFillBackground(true);
+    ui->calc_input->setStyleSheet(displayColors);
+
+    ui->menubar->setAutoFillBackground(true);
+    ui->menubar->setStyleSheet(menuColors);
+
+    ui->div_button->setAutoFillBackground(true);
+    ui->one_button->setAutoFillBackground(true);
+    ui->two_button->setAutoFillBackground(true);
+    ui->three_button->setAutoFillBackground(true);
+    ui->four_button->setAutoFillBackground(true);
+    ui->five_button->setAutoFillBackground(true);
+    ui->six_button->setAutoFillBackground(true);
+    ui->seven_button->setAutoFillBackground(true);
+    ui->eight_button->setAutoFillBackground(true);
+    ui->nine_button->setAutoFillBackground(true);
+    ui->zero_button->setAutoFillBackground(true);
+    ui->changesign_button->setAutoFillBackground(true);
+    ui->clear_button->setAutoFillBackground(true);
+    ui->decimal_button->setAutoFillBackground(true);
+    ui->delete_button->setAutoFillBackground(true);
+    ui->div_button->setAutoFillBackground(true);
+    ui->mult_button->setAutoFillBackground(true);
+    ui->plus_button->setAutoFillBackground(true);
+    ui->minu_button->setAutoFillBackground(true);
+    ui->enter_button->setAutoFillBackground(true);
+
+    ui->div_button->setStyleSheet(buttonColors);
+    ui->one_button->setStyleSheet(buttonColors);
+    ui->two_button->setStyleSheet(buttonColors);
+    ui->three_button->setStyleSheet(buttonColors);
+    ui->four_button->setStyleSheet(buttonColors);
+    ui->five_button->setStyleSheet(buttonColors);
+    ui->six_button->setStyleSheet(buttonColors);
+    ui->seven_button->setStyleSheet(buttonColors);
+    ui->eight_button->setStyleSheet(buttonColors);
+    ui->nine_button->setStyleSheet(buttonColors);
+    ui->zero_button->setStyleSheet(buttonColors);
+    ui->changesign_button->setStyleSheet(buttonColors);
+    ui->clear_button->setStyleSheet(buttonOpColors);
+    ui->decimal_button->setStyleSheet(buttonColors);
+    ui->delete_button->setStyleSheet(buttonOpColors);
+    ui->div_button->setStyleSheet(buttonOpColors);
+    ui->mult_button->setStyleSheet(buttonOpColors);
+    ui->plus_button->setStyleSheet(buttonOpColors);
+    ui->minu_button->setStyleSheet(buttonOpColors);
+    ui->enter_button->setStyleSheet(buttonOpColors);
+}
+
+void Calculator::on_actionNighttime_Forest_Mysteries_triggered()
+{
+    QPalette palWin = palette();
+    QString buttonBackground = "background-color: rgb(0,53,86);";
+    QString buttonText = "color: rgb(255,255,255); font: 14pt 'Baskerville Old Face'";
+    QString buttonOpBackground = "background-color: rgb(51,0,86);";
+    QString buttonOpText = "color: rgb(255,255,255); font: 14pt 'Baskerville Old Face'";
+    QString displayBackground = "background-color: rgb(50,97,119);";
+    QString displayText = "color: rgb(255,255,255); font: 14pt 'Baskerville Old Face'";
+    QString menuBackground = "background-color: rgb(16,0,86)";
+    QString menuText = "color: rgb(255,255,255); font: 10pt 'Baskerville Old Face'";
+
+    QString displayColors = displayBackground + ";" + displayText;
+    QString buttonColors = buttonBackground +";" + buttonText;
+    QString menuColors = menuBackground + ";" + menuText;
+    QString buttonOpColors = buttonOpBackground +";" + buttonOpText;
+
+
+    palWin.setColor(QPalette::Window,QColor::fromRgb(0,61,118));
+
+    ui->centralwidget->setAutoFillBackground(true);
+    ui->centralwidget->setPalette(palWin);
+
+    ui->calc_input->setAutoFillBackground(true);
+    ui->calc_input->setStyleSheet(displayColors);
+
+    ui->menubar->setAutoFillBackground(true);
+    ui->menubar->setStyleSheet(menuColors);
+
+    ui->div_button->setAutoFillBackground(true);
+    ui->one_button->setAutoFillBackground(true);
+    ui->two_button->setAutoFillBackground(true);
+    ui->three_button->setAutoFillBackground(true);
+    ui->four_button->setAutoFillBackground(true);
+    ui->five_button->setAutoFillBackground(true);
+    ui->six_button->setAutoFillBackground(true);
+    ui->seven_button->setAutoFillBackground(true);
+    ui->eight_button->setAutoFillBackground(true);
+    ui->nine_button->setAutoFillBackground(true);
+    ui->zero_button->setAutoFillBackground(true);
+    ui->changesign_button->setAutoFillBackground(true);
+    ui->clear_button->setAutoFillBackground(true);
+    ui->decimal_button->setAutoFillBackground(true);
+    ui->delete_button->setAutoFillBackground(true);
+    ui->div_button->setAutoFillBackground(true);
+    ui->mult_button->setAutoFillBackground(true);
+    ui->plus_button->setAutoFillBackground(true);
+    ui->minu_button->setAutoFillBackground(true);
+    ui->enter_button->setAutoFillBackground(true);
+
+    ui->div_button->setStyleSheet(buttonColors);
+    ui->one_button->setStyleSheet(buttonColors);
+    ui->two_button->setStyleSheet(buttonColors);
+    ui->three_button->setStyleSheet(buttonColors);
+    ui->four_button->setStyleSheet(buttonColors);
+    ui->five_button->setStyleSheet(buttonColors);
+    ui->six_button->setStyleSheet(buttonColors);
+    ui->seven_button->setStyleSheet(buttonColors);
+    ui->eight_button->setStyleSheet(buttonColors);
+    ui->nine_button->setStyleSheet(buttonColors);
+    ui->zero_button->setStyleSheet(buttonColors);
+    ui->changesign_button->setStyleSheet(buttonColors);
+    ui->clear_button->setStyleSheet(buttonOpColors);
+    ui->decimal_button->setStyleSheet(buttonColors);
+    ui->delete_button->setStyleSheet(buttonOpColors);
+    ui->div_button->setStyleSheet(buttonOpColors);
+    ui->mult_button->setStyleSheet(buttonOpColors);
+    ui->plus_button->setStyleSheet(buttonOpColors);
+    ui->minu_button->setStyleSheet(buttonOpColors);
+    ui->enter_button->setStyleSheet(buttonOpColors);
+}
+
+void Calculator::on_actionFantasy_Forest_triggered()
+{
+    QPalette palWin = palette();
+    QString buttonBackground = "background-color: rgb(14,86,5);";
+    QString buttonText = "color: rgb(255,255,255); font: 14pt 'Baskerville Old Face'";
+    QString buttonOpBackground = "background-color: rgb(63,43,61);";
+    QString buttonOpText = "color: rgb(255,255,255); font: 14pt 'Baskerville Old Face'";
+    QString displayBackground = "background-color: rgb(46,86,82);";
+    QString displayText = "color: rgb(255,255,255); font: 14pt 'Baskerville Old Face'";
+    QString menuBackground = "background-color: rgb(19,66,33)";
+    QString menuText = "color: rgb(255,255,255); font: 10pt 'Baskerville Old Face'";
+
+    QString displayColors = displayBackground + ";" + displayText;
+    QString buttonColors = buttonBackground +";" + buttonText;
+    QString menuColors = menuBackground + ";" + menuText;
+    QString buttonOpColors = buttonOpBackground +";" + buttonOpText;
+
+
+    palWin.setColor(QPalette::Window,QColor::fromRgb(10,80,54));
+
+    ui->centralwidget->setAutoFillBackground(true);
+    ui->centralwidget->setPalette(palWin);
+
+    ui->calc_input->setAutoFillBackground(true);
+    ui->calc_input->setStyleSheet(displayColors);
+
+    ui->menubar->setAutoFillBackground(true);
+    ui->menubar->setStyleSheet(menuColors);
+
+    ui->div_button->setAutoFillBackground(true);
+    ui->one_button->setAutoFillBackground(true);
+    ui->two_button->setAutoFillBackground(true);
+    ui->three_button->setAutoFillBackground(true);
+    ui->four_button->setAutoFillBackground(true);
+    ui->five_button->setAutoFillBackground(true);
+    ui->six_button->setAutoFillBackground(true);
+    ui->seven_button->setAutoFillBackground(true);
+    ui->eight_button->setAutoFillBackground(true);
+    ui->nine_button->setAutoFillBackground(true);
+    ui->zero_button->setAutoFillBackground(true);
+    ui->changesign_button->setAutoFillBackground(true);
+    ui->clear_button->setAutoFillBackground(true);
+    ui->decimal_button->setAutoFillBackground(true);
+    ui->delete_button->setAutoFillBackground(true);
+    ui->div_button->setAutoFillBackground(true);
+    ui->mult_button->setAutoFillBackground(true);
+    ui->plus_button->setAutoFillBackground(true);
+    ui->minu_button->setAutoFillBackground(true);
+    ui->enter_button->setAutoFillBackground(true);
+
+    ui->div_button->setStyleSheet(buttonColors);
+    ui->one_button->setStyleSheet(buttonColors);
+    ui->two_button->setStyleSheet(buttonColors);
+    ui->three_button->setStyleSheet(buttonColors);
+    ui->four_button->setStyleSheet(buttonColors);
+    ui->five_button->setStyleSheet(buttonColors);
+    ui->six_button->setStyleSheet(buttonColors);
+    ui->seven_button->setStyleSheet(buttonColors);
+    ui->eight_button->setStyleSheet(buttonColors);
+    ui->nine_button->setStyleSheet(buttonColors);
+    ui->zero_button->setStyleSheet(buttonColors);
+    ui->changesign_button->setStyleSheet(buttonColors);
+    ui->clear_button->setStyleSheet(buttonOpColors);
+    ui->decimal_button->setStyleSheet(buttonColors);
+    ui->delete_button->setStyleSheet(buttonOpColors);
+    ui->div_button->setStyleSheet(buttonOpColors);
+    ui->mult_button->setStyleSheet(buttonOpColors);
+    ui->plus_button->setStyleSheet(buttonOpColors);
+    ui->minu_button->setStyleSheet(buttonOpColors);
+    ui->enter_button->setStyleSheet(buttonOpColors);
 }

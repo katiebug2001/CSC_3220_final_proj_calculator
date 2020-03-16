@@ -71,6 +71,22 @@ private slots:
 
     void on_actionPastel_Galaxy_Purple_triggered();
 
+    void on_actionBronze_Copper_triggered();
+
+    void on_actionGold_triggered();
+
+    void on_actionCopper_Rose_Gold_triggered();
+
+    void on_actionUnderwater_triggered();
+
+    void on_actionUnicorn_Candy_triggered();
+
+    void on_actionVibrant_and_Elegant_triggered();
+
+    void on_actionNighttime_Forest_Mysteries_triggered();
+
+    void on_actionFantasy_Forest_triggered();
+
 private:
     Ui::Calculator *ui;
     // state machine elements:
