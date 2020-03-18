@@ -103,6 +103,10 @@ private slots:
 
     void on_actionGothic_Architecture_triggered();
 
+    void on_pi_button_clicked();
+
+    void on_e_button_clicked();
+
 private:
     Ui::Calculator *ui;
     // state machine elements:

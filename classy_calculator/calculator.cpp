@@ -1,6 +1,7 @@
 #include "calculator.h"
 #include "ui_calculator.h"
 #include <iostream>
+#include <cmath>
 
 #include <QDebug>
 
@@ -62,21 +63,17 @@ void Calculator::reset_display_num()
 // sets display to display_num
 void Calculator::set_display()
 {
-    qDebug() << "setting display " << display_num;
     ui->calc_input->setText( display_num );
 }
 
 
 void Calculator::handle_digit_input( QString digit)
 {
-    qDebug() << "digit input: " << digit;
     if ( current_state != display_result )
     {
-        qDebug() << "state not 'display result'";
         // if the display is 0 and NOT '0.'
         if ( display_num.toInt() == 0 && !(display_num.contains( '.' ) ) )
         {
-            qDebug() << "current display was 0";
             display_num = digit;
         }
         else if( digit.size() <= max_display_len )
@@ -130,7 +127,7 @@ void Calculator::handle_operation( Calculator::Operation this_op )
         break;
     }
     set_display();
-    show_state();
+//    show_state();
 }
 
 
@@ -143,7 +140,6 @@ void Calculator::eval_current_input()
         // note: the state is still changed ( at the end of the fct)
         break;
     case 1: // enter_num2
-        qDebug() << "it's an x op y ";
         second_num = display_num.toFloat();
         display_num = QString::number( eval_with_order_of_ops() );
         break;
@@ -159,7 +155,7 @@ void Calculator::eval_current_input()
     }
     current_state = State::display_result;
     set_display();
-    show_state();
+//    show_state();
 }
 
 void Calculator::do_operation(float a, float b, Calculator::Operation op, float &result)
@@ -188,8 +184,7 @@ void Calculator::do_operation(float a, float b, Calculator::Operation op, float 
 // evaluate "a op b op c", taking order of operations "PEMDAS" into account
 float Calculator::eval_with_order_of_ops()
 {
-    qDebug() << "doing order of ops eval";
-    show_state();
+//    show_state();
     bool first_is_add = ( first_op == plus ) || ( first_op == minus );
     bool first_is_mult = ( first_op == mult ) || ( first_op == div );
     bool second_is_add = ( second_op == plus ) || ( second_op == minus );
@@ -197,10 +192,6 @@ float Calculator::eval_with_order_of_ops()
 
     float result;
 
-    qDebug() << "first is add: " << first_is_add
-             << " | first is mult: " << first_is_mult
-             << " || second is add: " << second_is_add
-             << "| second is mult: " << second_is_mult;
     if ( first_is_add && second_is_mult ) // x + y*z
     {
         do_operation( second_num, third_num, second_op, result ); // y * z
@@ -216,7 +207,6 @@ float Calculator::eval_with_order_of_ops()
         do_operation( first_num, second_num, first_op, result); // x op y
         do_operation(result, third_num, second_op, result); // (x op y) op z
     }
-    qDebug() << "result: " << result;
     return result;
 }
 
@@ -327,7 +317,6 @@ void Calculator::on_clear_button_clicked()
 
 void Calculator::on_delete_button_clicked()
 {
-    qDebug() << "delete button";
     int digits = display_num.size();
     if ( digits != 0 && current_state != display_result )
     {
@@ -367,7 +356,6 @@ void Calculator::on_div_button_clicked()
 
 void Calculator::on_enter_button_clicked()
 {
-    qDebug() << "evaluating";
     eval_current_input();
 }
 
@@ -378,9 +366,9 @@ void Calculator::applyTheme(QPalette pal, QString nums, QString ops, QString dis
     QString menuColors = menu;
     QString buttonColors = nums;
     QString buttonOpColors = ops;
-
     ui->centralwidget->setAutoFillBackground(true);
     ui->centralwidget->setPalette(palWin);
+
 
     ui->calc_input->setAutoFillBackground(true);
     ui->calc_input->setStyleSheet(displayColors);
@@ -409,7 +397,9 @@ void Calculator::applyTheme(QPalette pal, QString nums, QString ops, QString dis
     ui->minu_button->setAutoFillBackground(true);
     ui->enter_button->setAutoFillBackground(true);
 
-    ui->div_button->setStyleSheet(buttonColors);
+//    ui->centralwidget->setStyleSheet( "QPushButton: { buttonColors }");
+      ui->div_button->setStyleSheet( buttonColors );
+//      ui->div_button->setStyleSheet( "hover: { background-color: yellow; }" );
     ui->one_button->setStyleSheet(buttonColors);
     ui->two_button->setStyleSheet(buttonColors);
     ui->three_button->setStyleSheet(buttonColors);
@@ -421,6 +411,8 @@ void Calculator::applyTheme(QPalette pal, QString nums, QString ops, QString dis
     ui->nine_button->setStyleSheet(buttonColors);
     ui->zero_button->setStyleSheet(buttonColors);
     ui->changesign_button->setStyleSheet(buttonColors);
+    ui->pi_button->setStyleSheet(buttonColors);
+    ui->e_button->setStyleSheet(buttonColors);
     ui->clear_button->setStyleSheet(buttonOpColors);
     ui->decimal_button->setStyleSheet(buttonColors);
     ui->delete_button->setStyleSheet(buttonOpColors);
@@ -429,4 +421,23 @@ void Calculator::applyTheme(QPalette pal, QString nums, QString ops, QString dis
     ui->plus_button->setStyleSheet(buttonOpColors);
     ui->minu_button->setStyleSheet(buttonOpColors);
     ui->enter_button->setStyleSheet(buttonOpColors);
+
+}
+
+void Calculator::on_pi_button_clicked()
+{
+    // note: pi will erase whatever is currently on display
+    reset_display_num();
+    display_num = QString::number( M_PI );
+    has_decimal = true;
+    set_display();
+}
+
+void Calculator::on_e_button_clicked()
+{
+    // note: e will erase whatever is currenty on display
+    reset_display_num();
+    display_num = QString::number( std::exp( 1 ) );
+    has_decimal = true;
+    set_display();
 }

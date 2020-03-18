@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>292</width>
-    <height>405</height>
+    <width>300</width>
+    <height>474</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,10 +15,17 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QPushButton
-{
+{ 
 	border:1px solid #000000;
+	font-size: 20px; 
+}
+
+QLabel
+{
 	font-size: 20px;
-}</string>
+}
+
+ </string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="one_button">
@@ -274,8 +281,8 @@
    <widget class="QPushButton" name="decimal_button">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>240</y>
+      <x>20</x>
+      <y>290</y>
       <width>61</width>
       <height>51</height>
      </rect>
@@ -299,8 +306,8 @@
    <widget class="QPushButton" name="changesign_button">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>240</y>
+      <x>80</x>
+      <y>290</y>
       <width>61</width>
       <height>51</height>
      </rect>
@@ -325,7 +332,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>300</y>
+      <y>360</y>
       <width>61</width>
       <height>51</height>
      </rect>
@@ -450,7 +457,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>300</y>
+      <y>360</y>
       <width>61</width>
       <height>51</height>
      </rect>
@@ -475,7 +482,7 @@
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>300</y>
+      <y>360</y>
       <width>61</width>
       <height>51</height>
      </rect>
@@ -507,7 +514,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -521,6 +528,57 @@
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pi_button">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>240</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>π</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="e_button">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>240</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>-1</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>e</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <zorder>calc_input</zorder>
@@ -543,6 +601,8 @@
    <zorder>plus_button</zorder>
    <zorder>clear_button</zorder>
    <zorder>delete_button</zorder>
+   <zorder>pi_button</zorder>
+   <zorder>e_button</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
@@ -550,7 +610,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>292</width>
+     <width>300</width>
      <height>22</height>
     </rect>
    </property>
