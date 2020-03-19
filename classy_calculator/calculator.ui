@@ -39,8 +39,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -64,8 +65,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -89,8 +91,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -114,8 +117,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -139,8 +143,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -164,8 +169,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -189,8 +195,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -214,8 +221,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -239,8 +247,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -264,8 +273,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -289,8 +299,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -314,8 +325,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -339,8 +351,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -364,8 +377,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -389,8 +403,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -414,8 +429,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -439,8 +455,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -464,8 +481,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -489,8 +507,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -541,8 +560,9 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
+      <italic>false</italic>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -566,7 +586,7 @@ QLabel
     </property>
     <property name="font">
      <font>
-      <family>.AppleSystemUIFont</family>
+      <family>Open Sans</family>
       <pointsize>-1</pointsize>
       <italic>true</italic>
      </font>
@@ -611,7 +631,7 @@ QLabel
      <x>0</x>
      <y>0</y>
      <width>300</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTheme">

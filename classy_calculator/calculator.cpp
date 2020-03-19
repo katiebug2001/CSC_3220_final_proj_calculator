@@ -13,9 +13,9 @@ Calculator::Calculator(QWidget *parent)
     reset_and_setup();
 
     QPalette palWin = palette();
-    QString buttonBackground = "background-color: rgb(187,187,187);";
+    QString buttonBackground = "background-color: rgb(187,187,187); border: 1px solid rgb(204,204,204)";
     QString buttonText = "color: rgb(0,0,0);";
-    QString buttonOpBackground = "background-color: rgb(187,187,187);";
+    QString buttonOpBackground = "background-color: rgb(187,187,187); border: 1px solid rgb(204,204,204)";
     QString buttonOpText = "color: rgb(0,0,0);";
     QString displayBackground = "background-color: rgb(238,238,238);";
     QString displayText = "color: rgb(0,0,0);";
